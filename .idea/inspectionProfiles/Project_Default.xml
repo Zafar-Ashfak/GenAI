@@ -1,0 +1,131 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="DuplicatedCode" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <Languages>
+        <language minSize="84" name="Python" />
+      </Languages>
+    </inspection_tool>
+    <inspection_tool class="HttpUrlsUsage" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredUrls">
+        <list>
+          <option value="http://" />
+          <option value="http://0.0.0.0" />
+          <option value="http://127.0.0.1" />
+          <option value="http://activemq.apache.org/schema/" />
+          <option value="http://cxf.apache.org/schemas/" />
+          <option value="http://java.sun.com/" />
+          <option value="http://javafx.com/fxml" />
+          <option value="http://javafx.com/javafx/" />
+          <option value="http://json-schema.org/draft" />
+          <option value="http://localhost" />
+          <option value="http://maven.apache.org/POM/" />
+          <option value="http://maven.apache.org/xsd/" />
+          <option value="http://primefaces.org/ui" />
+          <option value="http://schema.cloudfoundry.org/spring/" />
+          <option value="http://schemas.xmlsoap.org/" />
+          <option value="http://tiles.apache.org/" />
+          <option value="http://www.ibm.com/webservices/xsd" />
+          <option value="http://www.jboss.com/xml/ns/" />
+          <option value="http://www.jboss.org/j2ee/schema/" />
+          <option value="http://www.springframework.org/schema/" />
+          <option value="http://www.springframework.org/security/tags" />
+          <option value="http://www.springframework.org/tags" />
+          <option value="http://www.thymeleaf.org" />
+          <option value="http://www.w3.org/" />
+          <option value="http://xmlns.jcp.org/" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="streamlit" />
+          <option value="yt-dlp" />
+          <option value="pydub" />
+          <option value="ffmpeg-python" />
+          <option value="openai-whisper" />
+          <option value="torch" />
+          <option value="torchaudio" />
+          <option value="googletrans" />
+          <option value="langchain" />
+          <option value="langchain-core" />
+          <option value="langchain-community" />
+          <option value="langchain-mistralai" />
+          <option value="chromadb" />
+          <option value="langchain-huggingface" />
+          <option value="sentence-transformers" />
+          <option value="huggingface-hub" />
+          <option value="fpdf2" />
+          <option value="reportlab" />
+          <option value="python-dotenv" />
+          <option value="tqdm" />
+          <option value="numpy" />
+          <option value="pandas" />
+          <option value="a" />
+          <option value="deep-translator" />
+          <option value="requests" />
+          <option value="langchain-text-splitters" />
+          <option value="langchain-chroma" />
+          <option value="langchain-openai" />
+          <option value="langgraph" />
+          <option value="openai" />
+          <option value="tavily-python" />
+          <option value="beautifulsoup4" />
+          <option value="lxml" />
+          <option value="aiohttp" />
+          <option value="tiktoken" />
+          <option value="rich" />
+          <option value="tenacity" />
+          <option value="orjson" />
+          <option value="pydantic" />
+          <option value="html5lib" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="INFORMATION" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E302" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N802" />
+          <option value="N806" />
+          <option value="N801" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyStringConversionWithoutDunderMethodInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredTypes">
+        <list>
+          <option value="types.NoneType" />
+          <option value="pandas.io.parsers.readers.TextFileReader" />
+        </list>
+      </option>
+      <option name="reportedTypes">
+        <list>
+          <option value="object" />
+          <option value="types.FunctionType" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyStubPackagesAdvertiser" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="pandas" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="updateData.views.updateData.*" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

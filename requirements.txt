@@ -1,0 +1,22 @@
+# ==============================
+# LLM APIs
+# ==============================
+
+# OpenAI
+openai
+
+# xAI / Grok
+xai-sdk
+
+# Google Gemini
+google-genai
+
+# Mistral AI
+mistralai
+
+
+# ==============================
+# Environment Variables
+# ==============================
+
+python-dotenv
