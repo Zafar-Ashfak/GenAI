@@ -1,22 +1,18 @@
-# ==============================
-# LLM APIs
-# ==============================
+langchain
+langchain-core
+langchain-community
+langgraph
 
-# OpenAI
-openai
-
-# xAI / Grok
-xai-sdk
-
-# Google Gemini
-google-genai
-
-# Mistral AI
-mistralai
-
-
-# ==============================
-# Environment Variables
-# ==============================
+langchain-openai
+langchain-google-genai
+langchain-groq
+langchain-mistralai
 
 python-dotenv
+
+faiss-cpu
+tiktoken
+
+fastapi
+uvicorn
+requests
