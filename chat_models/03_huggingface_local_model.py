@@ -1,8 +1,7 @@
 from langchain_huggingface import ChatHuggingFace, HuggingFacePipeline
-
-from dotenv import load_dotenv
 import os
 
+from dotenv import load_dotenv
 load_dotenv()
 
 print("HF_TOKEN loaded:", os.getenv("HF_TOKEN") is not None)
