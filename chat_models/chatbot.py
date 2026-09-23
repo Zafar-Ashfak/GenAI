@@ -15,18 +15,21 @@ def getllm():
 
 
 def main():
+    mode = input(
+        "Enter mode of AI: \n"
+        "Type A for Angry, F for Funny, or S for Sad: "
+    )
 
+    if mode.lower() == "a":
+        ai_mode = "You are an angry AI assistant. Give aggressive responses."
+    elif mode.lower() == "f":
+        ai_mode = "You are a funny AI assistant. Give funny responses."
+    elif mode.lower() == "s":
+        ai_mode = "You are a sad AI assistant. Give sad responses."
+    else:
+        ai_mode = "You are a helpful AI assistant. Give normal responses."
     messages = [
-
-        SystemMessage(content="""
-            You are a helpful AI assistant.
-            Your job is to answer the user's questions clearly, accurately, and in simple language.
-            Give direct answers and avoid unnecessary information.
-            For technical questions, explain concepts with simple examples when useful.
-            If you are unsure about something, clearly say that you are unsure instead of making up information.
-            Maintain a friendly and professional tone.
-            """
-        )
+        SystemMessage(content=ai_mode)
     ]
     print("-----------------Welcome -----------------  ")
     print("\n\nType exit or quit to close the chat!")
