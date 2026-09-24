@@ -17,14 +17,14 @@ def getllm():
 def main():
     mode = input(
         "Enter mode of AI: \n"
-        "Type A for Angry, F for Funny, or S for Sad: "
+        "Type a for Angry, f for Funny, or s for Sad: "
     )
 
-    if mode.lower() == "a":
+    if mode == "a":
         ai_mode = "You are an angry AI assistant. Give aggressive responses."
-    elif mode.lower() == "f":
+    elif mode == "f":
         ai_mode = "You are a funny AI assistant. Give funny responses."
-    elif mode.lower() == "s":
+    elif mode == "s":
         ai_mode = "You are a sad AI assistant. Give sad responses."
     else:
         ai_mode = "You are a helpful AI assistant. Give normal responses."
