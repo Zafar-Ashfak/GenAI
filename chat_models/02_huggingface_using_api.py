@@ -1,3 +1,6 @@
+# Import Hugging Face's endpoint and chat model classes through LangChain, load the Hugging Face API credentials from the .env
+# file, configure the GPT-OSS-20B model using HuggingFaceEndpoint, wrap it with ChatHuggingFace to use it as a chat model.
+
 from langchain_huggingface import HuggingFaceEndpoint, ChatHuggingFace
 
 from dotenv import load_dotenv
