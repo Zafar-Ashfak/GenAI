@@ -13,7 +13,6 @@ def getllm():
 
    return ChatHuggingFace(llm=llm)
 
-
 def main():
     mode = input(
         "Enter mode of AI: \n"
