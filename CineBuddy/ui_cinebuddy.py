@@ -16,7 +16,7 @@ def get_model():
     return ChatHuggingFace(llm=llm)
 
 
-prompt = ChatPromptTemplate([
+prompt = ChatPromptTemplate.from_messages([
     ("system", """
         You are a movie information extraction assistant.
 
