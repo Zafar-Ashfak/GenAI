@@ -5,10 +5,15 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-model = ChatGoogleGenerativeAI(
+def getllm():
+    return ChatGoogleGenerativeAI(
     model="gemini-3.6-flash",
-    temperature=0.8)
+    temperature=0.2)
 
-response = model.invoke("Tell me everything about Taj Mahal?")
+def main():
+    llm = getllm()
+    user_prompt = input("What's in your mind\n")
+    response = llm.invoke(user_prompt)
+    print(response.content[0]["text"])
 
-print(response.content)
+main()
