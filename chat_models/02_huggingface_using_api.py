@@ -13,7 +13,7 @@ llm = HuggingFaceEndpoint(
 
 model = ChatHuggingFace(llm = llm)
 
-response = model.invoke("What is AI, ML and DL?")
+response = model.invoke("Why we are facing RAM shortage now a days?")
 
 print(response.content)
 
