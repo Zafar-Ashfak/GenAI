@@ -4,13 +4,14 @@ from langchain_core.prompts import ChatPromptTemplate
 from dotenv import load_dotenv
 load_dotenv()
 
+
 def get_llm():
     return HuggingFaceEndpoint(
         repo_id="openai/gpt-oss-20b",
         temperature=0.2
     )
 
-prompt = ChatPromptTemplate([
+prompt = ChatPromptTemplate.from_messages([
     ("system", """
         You are a movie information extraction assistant.
 
