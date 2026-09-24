@@ -1,10 +1,7 @@
+# Load the TinyLlama model locally from Hugging Face using LangChain's HuggingFacePipeline, wrap it as a chat model with
+# ChatHuggingFace, send a prompt to the locally running model using invoke(), and print the generated response.
+
 from langchain_huggingface import ChatHuggingFace, HuggingFacePipeline
-import os
-
-from dotenv import load_dotenv
-load_dotenv()
-
-print("HF_TOKEN loaded:", os.getenv("HF_TOKEN") is not None)
 
 print("Loading model...")
 
