@@ -1,20 +1,25 @@
+# Load the Hugging Face embedding model through LangChain, use the local sentence-transformers model to convert text into
+# numerical vector representations, and generate embeddings for multiple sentences using embed_documents().
+
 from langchain_huggingface import HuggingFaceEmbeddings
 
-from dotenv import load_dotenv
-load_dotenv()
-
 embeddings = HuggingFaceEmbeddings(
-    model="sentence-transformers/all-MiniLM-L6-v2"
+    model= "sentence-transformers/all-MiniLM-L6-v2"
 )
 
+# for single sentence
+# vector = embeddings.embed_query("What is AI?")
+# print(vector)
+
+# for multiple sentences
 texts = [
-    "What is tokens?",
-    "What is tokenization?",
-    "What is an embedding?"
+    "What is AI?",
+    "What is ML",
+    "What is DL",
+    "What is NLP"
 ]
 
-# query_vector = embeddings.embed_query("What is AI?")  # ---> Embed a single sentence
-document_vectors = embeddings.embed_documents(texts) # ---> Embed multiple sentences
-
-# print(query_vector)
+document_vectors = embeddings.embed_documents(texts)
 print(document_vectors)
+
+
