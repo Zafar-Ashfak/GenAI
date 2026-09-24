@@ -25,7 +25,7 @@ def get_llm():
 
 
 st.title("Meta Bot")
-st.write("Meta Llama AI chatbot with Normal, Angry, Funny, and Sad modes.")
+st.write("Llama AI chatbot with Normal, Angry, Funny, and Sad modes.")
 
 # The selected mode is applied to every new reply
 mode = st.radio("AI mode", list(MODES), horizontal=True)
